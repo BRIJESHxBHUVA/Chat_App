@@ -27,10 +27,13 @@ const userSchema = mongoose.Schema({
         require: true
     },
     is_online: {
-        type: Number,
-        default: '0'
+        type: Boolean,
+        default: false
+    },
+    last_seen: {
+        type: Number
     }
-    
+
 }, { timestamps: true })
 
 const User = mongoose.model('User', userSchema)

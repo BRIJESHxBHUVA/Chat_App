@@ -1,0 +1,536 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combined HTML and CSS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        @font-face {
+            font-family: pangram_bold;
+            src: url("{% static 'fonts/Pangram-Bold.ttf' %}");
+        }
+        @font-face {
+            font-family: poppins_light;
+            src: url("{% static 'fonts/Poppins-Light.ttf' %}");
+        }
+        @font-face {
+            font-family: poppins_regular;
+            src: url('{% static "fonts/Poppins-Regular.ttf" %}');
+        }
+        @font-face {
+            font-family: futura-pt-bold;
+            src: url('{% static "fonts/futura-pt-bold.ttf" %}');
+        }
+        
+        .header_first_page_company_2_48318358 {
+            position: absolute;
+            top: 50px;
+            left: 1110px;
+            width: 300px;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .header_first_page_company_2_48318358 img {
+            width: auto;
+            height: auto;
+            max-width: 300px;
+            max-height: 150px;
+            object-fit: cover;
+        }
+        .header_first_page_client_2_48318358 {
+            position: absolute;
+            top: 50px;
+            left: 767px;
+            width: 300px;
+            height: 150px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        .header_first_page_client_2_48318358 img {
+            width: auto;
+            height: auto;
+            max-width: 300px;
+            max-height: 150px;
+            object-fit: cover;
+        }
+        .header_first_page_company_3_48318358 {
+            position: absolute;
+            top: 50px;
+            left: 1110px;
+            width: 300px;
+            height: 150px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .header_first_page_company_3_48318358 img {
+            width: auto;
+            height: auto;
+            max-width: 300px;
+            max-height: 150px;
+            object-fit: cover;
+        }
+        .header_first_page_client_3_48318358 {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            text-align: end;
+            top: 50px;
+            left: 570px;
+            width: 502px;
+            height: 150px;
+            overflow: hidden;
+            color: black;
+            font-family: pangram_bold;
+            font-size: 32px;
+        }
+        .header_first_page_client_name{
+            position: absolute;
+            top: 60px;
+            left: 558px;
+            width: 845px;
+            height: 150px;
+            font-size: 40px;
+            color: black;
+            font-family: pangram_bold;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            
+        }
+        .header_first_page_volume{
+            position: absolute;
+            top: 186px;
+            left: 168px;
+            font-family: pangram_bold;
+            font-size: 45px;
+            color: black;
+        }
+        .header_first_page_client_1_48318358 {
+            position: absolute;
+            top: 50px;
+            left: 1110px;
+            width: 300px;
+            height: 150px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        .header_first_page_client_1_48318358 img {
+            width: auto;
+            height: auto;
+            max-width: 300px;
+            max-height: 150px;
+            object-fit: cover;
+        }
+        .header_fourth_page_client_1_48318358 {
+            position: absolute;
+            top: 70px;
+            right: 75px;
+            width: 300px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        .header_fourth_page_client_1_48318358 img {
+            width: auto;
+            height: auto;
+            max-width: 250px;
+            max-height: 150px;
+            object-fit: cover;
+        }
+        .header_first_website_48318358 {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 968px;
+            left: 0px;
+            width: 738px;
+            height: 70px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            color: black;
+            font-family: poppins_light;
+            font-size: 18px;
+            white-space: nowrap;
+        }
+        .header_first_page_48318358 {
+            width: 1475px;
+            height: 1042px;
+            background-color: #FFFFFF;
+            background-image: url("{% static 'company/livenza/onyx/onyx_page_1.svg' %}"),
+            url("{% static 'company/livenza/onyx/onyx_page_1.png' %}");
+            background-size: cover, cover;
+            background-repeat: no-repeat, no-repeat;
+            overflow: hidden;
+            position: relative;
+        }
+        .header_second_website_48318358 {
+            position: absolute;
+            bottom: 50px;
+            left: 73px;
+            color: black;
+            font-family: poppins_light;
+            font-size: 16px;
+        }
+        .header_second_page_48318358 {
+            width: 1475px;
+            height: 1042px;
+            background-color: #FFFFFF;
+            background-image: url("{% static 'company/livenza/onyx/onyx_page_2.svg' %}"),
+            url("{% static 'company/livenza/onyx/onyx_page_2.png' %}");
+            background-size: cover, cover;
+            background-repeat: no-repeat, no-repeat;
+            overflow: hidden;
+            position: relative;
+        }
+        .header_third_website_48318358 {
+            position: absolute;
+            bottom: 50px;
+            left: 73px;
+            color: black;
+            font-family: poppins_light;
+            font-size: 16px;
+        }
+        .header_third_page_48318358 {
+            width: 1475px;
+            height: 1042px;
+            background-color: #FFFFFF;
+            background-image: url("{% static 'company/livenza/onyx/onyx_page_3.svg' %}"),
+            url("{% static 'company/livenza/onyx/onyx_page_3.png' %}");
+            background-size: cover, cover;
+            background-repeat: no-repeat, no-repeat;
+            overflow: hidden;
+            position: relative;
+        }
+        .header_third_page_logo_48318358{
+            position: absolute;
+            left: 75px;
+            top: 50px;
+            width: 300px;
+            height: 150px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .header_third_page_logo_48318358 img{
+            width: auto;
+            height: auto;
+            max-width: 250px;
+            max-height: 150px;
+            object-fit: cover;
+        }
+        .header_fourth_page_48318358 {
+            width: 1475px;
+            height: 1042px;
+            background-color: #FFFFFF;
+            background-image: url("{% static 'company/livenza/onyx/onyx_page_4.svg' %}"),
+            url("{% static 'company/livenza/onyx/onyx_page_4.png' %}");
+            background-size: cover, cover;
+            background-repeat: no-repeat, no-repeat;
+            overflow: hidden;
+            position: relative;
+        }
+        .header_fourth_website_48318358 {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 922px;
+            left: 50px;
+            width: 662px;
+            height: 41px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            color: white;
+            font-family: poppins_light;
+            font-size: 18px;
+            white-space: nowrap;
+        }
+        .header_seventh_website_48318358{
+            position: absolute;
+            bottom: 50px;
+            right: 80px;
+            text-align: end;
+            color: black;
+            font-family: poppins_light;
+            font-size: 16px;
+        }
+        .header_fifth_page_48318358 {
+            width: 1475px;
+            height: 1042px;
+            background-color: #FFFFFF;
+            background-image: url("{% static 'company/livenza/onyx/onyx_page_5.svg' %}"),
+            url("{% static 'company/livenza/onyx/onyx_page_5.png' %}");
+            background-size: cover, cover;
+            background-repeat: no-repeat, no-repeat;
+            overflow: hidden;
+            position: relative;
+        }
+        .header_sixth_page_48318358 {
+            width: 1475px;
+            height: 1042px;
+            background-color: #FFFFFF;
+            background-image: url("{% static 'company/livenza/onyx/onyx_page_6.svg' %}"),
+            url("{% static 'company/livenza/onyx/onyx_page_6.png' %}");
+            background-size: cover, cover;
+            background-repeat: no-repeat, no-repeat;
+            overflow: hidden;
+            position: relative;
+        }
+        .header_seventh_page_48318358 {
+            width: 1475px;
+            height: 1042px;
+            background-color: #FFFFFF;
+            background-image: url("{% static 'company/livenza/onyx/onyx_page_7.svg' %}"),
+            url("{% static 'company/livenza/onyx/onyx_page_7.png' %}");
+            background-size: cover, cover;
+            background-repeat: no-repeat, no-repeat;
+            overflow: hidden;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    {% if page_number == "all" %}
+
+        <main class="header_first_page_48318358">
+
+            {% if company_info.company_logo and client_info.data.logo %}
+
+                <div class="header_first_page_company_2_48318358">
+                    {% if company_info.header_logo %}
+                        <img src="{{ company_info.header_logo }}" alt="Company Logo">
+                    {% elif company_info.company_information.logo_white %}
+                        <img src="{{ company_info.company_information.logo_white }}" alt="Company Logo">
+                    {% elif company_info.company_information.logo %}
+                        <img src="{{ company_info.company_information.logo }}" alt="Company Logo">
+                    {% endif %}
+                </div>
+
+                <div class="header_first_page_client_2_48318358">
+                    {% if client_info.data.logo %}
+                        <img src="{{ client_info.data.logo }}" alt="">
+                    {% endif %}
+                </div>
+
+            {% elif company_info.company_logo and client_info.data.client_name %}
+
+                <div class="header_first_page_company_3_48318358">
+                    {% if company_info.header_logo %}
+                    <img src="{{ company_info.header_logo }}" alt="Company Logo">
+                    {% elif company_info.company_information.logo_white %}
+                    <img src="{{ company_info.company_information.logo_white }}" alt="Company Logo">
+                    {% elif company_info.company_information.logo %}
+                    <img src="{{ company_info.company_information.logo }}" alt="Company Logo">
+                    {% endif %}
+                </div>
+
+                {% if client_info.data.name %}
+                    <span class="header_first_page_client_3_48318358">{{ client_info.data.name }}</span>
+                {% endif %}
+
+            {% elif company_info.company_logo %}
+
+                <div class="header_first_page_client_1_48318358">
+                    {% if company_info.header_logo %}
+                        <img src="{{ company_info.header_logo }}" alt="Company Logo">
+                    {% elif company_info.company_information.logo_white %}
+                        <img src="{{ company_info.company_information.logo_white }}" alt="Company Logo">
+                    {% elif company_info.company_information.logo %}
+                        <img src="{{ company_info.company_information.logo }}" alt="Company Logo">
+                    {% endif %}
+                </div>
+
+            {% elif client_info.data.logo %}
+
+                <div class="header_first_page_client_1_48318358">
+                    {% if client_info.data.logo %}
+                    <img src="{{ client_info.data.logo }}" alt="Company Logo">
+                    {% endif %}
+                </div>
+
+            {% elif client_info.data.name %}
+                <div class="header_first_page_client_name">
+                    <span>{{ client_info.data.name }}</span>
+                </div>
+            {% endif %}
+
+            <!-- {% if company_info.company_information.href_url and company_info.company_logo %}
+                <a class="" href="{{ company_info.company_information.href_url }}" target="_blank">
+                    <span class='header_first_website_48318358'>{{ company_info.company_information.urls }}</span>
+                </a>
+            {% endif %} -->
+
+            {% if company_info.company_information.volume %}
+                <span class="header_first_page_volume">{{ company_info.company_information.volume }}</span>
+            {% endif %}
+
+        </main>
+        
+        {% if company_info.company_logo %}
+            <main class="header_second_page_48318358">
+                {% if company_info.company_information.href_url and company_info.company_logo %}
+                    <a href="{{ company_info.company_information.href_url }}" target="_blank">
+                        <span class='header_second_website_48318358'>{{ company_info.company_information.urls }}</span>
+                    </a>
+                {% endif %}
+            </main>
+        {% endif %}
+
+        <main class="header_third_page_48318358">
+           
+            {% if company_info.company_logo %}
+                <div class="header_third_page_logo_48318358">
+                    {% if company_info.header_logo %}
+                        <img src="{{ company_info.header_logo }}" alt="Company Logo">
+                    {% elif company_info.company_information.logo_white %}
+                        <img src="{{ company_info.company_information.logo_white }}" alt="Company Logo">
+                    {% elif company_info.company_information.logo %}
+                        <img src="{{ company_info.company_information.logo }}" alt="Company Logo">
+                    {% endif %}
+                </div>
+            {% elif client_info.data.logo %}
+                <div class="header_third_page_logo_48318358">
+                    <img src="{{ client_info.data.logo }}" alt="Company Logo">
+                </div>
+            {% endif %}
+
+            {% if company_info.company_information.href_url and company_info.company_logo %}
+                <a class="" href="{{ company_info.company_information.href_url }}" target="_blank">
+                    <span class='header_third_website_48318358'>{{ company_info.company_information.urls }}</span>
+                </a>
+            {% endif %}
+           
+
+        </main>
+
+        <main class="header_fourth_page_48318358">
+           
+            {% if company_info.company_logo %}
+                <div class="header_fourth_page_client_1_48318358">
+                    {% if company_info.header_logo %}
+                    <img src="{{ company_info.header_logo }}" alt="Company Logo">
+                    {% elif company_info.company_information.logo_white %}
+                    <img src="{{ company_info.company_information.logo_white }}" alt="Company Logo">
+                    {% elif company_info.company_information.logo %}
+                    <img src="{{ company_info.company_information.logo }}" alt="Company Logo">
+                    {% endif %}
+                </div>
+            {% elif client_info.data.logo %}
+                <div class="header_fourth_page_client_1_48318358">
+                    <img src="{{ client_info.data.logo }}" alt="Company Logo">
+                </div>
+            {% endif %} 
+
+            {% if company_info.company_information.href_url and company_info.company_logo %}
+                <a class="" href="{{ company_info.company_information.href_url }}" target="_blank">
+                    <span class='header_fourth_website_48318358'>{{ company_info.company_information.urls }}</span>
+                </a>
+            {% endif %}
+
+        </main>
+
+        <main class="header_fifth_page_48318358">
+           
+            {% if company_info.company_logo %}
+                <div class="header_third_page_logo_48318358" style="top: 72px;align-items: flex-start;">
+                    {% if company_info.header_logo %}
+                        <img src="{{ company_info.header_logo }}" alt="Company Logo">
+                    {% elif company_info.company_information.logo_white %}
+                        <img src="{{ company_info.company_information.logo_white }}" alt="Company Logo">
+                    {% elif company_info.company_information.logo %}
+                        <img src="{{ company_info.company_information.logo }}" alt="Company Logo">
+                    {% endif %}
+                </div>
+            {% elif client_info.data.logo %}
+                <div class="header_third_page_logo_48318358">
+                    <img src="{{ client_info.data.logo }}" alt="Company Logo">
+                </div>
+            {% endif %}
+
+            {% if company_info.company_information.href_url and company_info.company_logo %}
+                <a class="" href="{{ company_info.company_information.href_url }}" target="_blank">
+                    <span class='header_third_website_48318358'>{{ company_info.company_information.urls }}</span>
+                </a>
+            {% endif %}
+           
+
+        </main>
+
+        <main class="header_sixth_page_48318358">
+           
+            {% if company_info.company_logo %}
+                <div class="header_third_page_logo_48318358" style="align-items: flex-start;top: 75px;">
+                    {% if company_info.company_information.logo_white %}
+                        <img src="{{ company_info.company_information.logo_white }}" alt="Company Logo">
+                    {% elif company_info.header_logo %}
+                        <img src="{{ company_info.header_logo }}" alt="Company Logo">
+                    {% elif company_info.company_information.logo %}
+                        <img src="{{ company_info.company_information.logo }}" alt="Company Logo">
+                    {% endif %}
+                </div>
+            {% elif client_info.data.logo %}
+                {% if client_info.data.logo_white %}
+                    <div class="header_third_page_logo_48318358" style="align-items: flex-start;top: 75px;">
+                        <img src="{{ client_info.data.logo_white }}" alt="Company Logo">
+                    </div>
+                {% else %}
+                    <div class="header_third_page_logo_48318358" style="align-items: flex-start;top: 75px;">
+                        <img src="{{ client_info.data.logo }}" alt="Company Logo">
+                    </div>
+                {% endif %}
+            {% endif %}
+
+            {% if company_info.company_information.href_url and company_info.company_logo %}
+                <a class="" href="{{ company_info.company_information.href_url }}" target="_blank">
+                    <span class='header_third_website_48318358'>{{ company_info.company_information.urls }}</span>
+                </a>
+            {% endif %}
+           
+
+        </main>
+
+        <main class="header_seventh_page_48318358">
+           
+            {% if company_info.company_logo %}
+                <div class="header_fourth_page_client_1_48318358">
+                    {% if company_info.header_logo %}
+                    <img src="{{ company_info.header_logo }}" alt="Company Logo">
+                    {% elif company_info.company_information.logo_white %}
+                    <img src="{{ company_info.company_information.logo_white }}" alt="Company Logo">
+                    {% elif company_info.company_information.logo %}
+                    <img src="{{ company_info.company_information.logo }}" alt="Company Logo">
+                    {% endif %}
+                </div>
+            {% elif client_info.data.logo %}
+                <div class="header_fourth_page_client_1_48318358">
+                    <img src="{{ client_info.data.logo }}" alt="Company Logo">
+                </div>
+            {% endif %} 
+
+            {% if company_info.company_information.href_url and company_info.company_logo %}
+                <a class="" href="{{ company_info.company_information.href_url }}" target="_blank">
+                    <span class='header_seventh_website_48318358'>{{ company_info.company_information.urls }}</span>
+                </a>
+            {% endif %}
+
+        </main>
+
+    {% endif %}
+</body>
+
+</html>

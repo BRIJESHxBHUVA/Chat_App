@@ -1,0 +1,12 @@
+#root {
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --welcome-side-background: #FF7518;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+}
